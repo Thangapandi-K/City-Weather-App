@@ -2,7 +2,7 @@ import searchIcon from "./assets/search.png";
 import WeatherData from "./components/WeatherData.jsx";
 import { API_KEY } from "./components/data.js";
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const App = () => {
   const [city, setCity] = useState("");
@@ -18,16 +18,6 @@ const App = () => {
 
   const { name: cityName, coord, sys, main, wind, cod, weather } = data;
 
-  // useEffect(() => {
-  //   fetch(
-  //     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=Metric`
-  //   )
-  //     .then((response) => response.json())
-  //     .then((data) => setData(data))
-  //     .catch((error) =>
-  //       console.log("Error Fetching Weather Data", error.message)
-  //     );
-  // }, []);
 
   const fetchWeatherData = async () => {
     setLoading(true);
