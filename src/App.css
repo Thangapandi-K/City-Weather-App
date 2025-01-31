@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lexend+Giga:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: darkcyan;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 5px 5px 6px black;
+}
+
+.container {
+  background-color: aliceblue;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container .input-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.input-container input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  height: 30px;
+  font-size: 16px;
+  outline: none;
+}
+.searchIcon {
+  height: 20px;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+
+.weather-wait {
+  text-align: center;
+  margin: 40px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  color: darkgrey;
+  font-family: "Exo 2";
+}
+
+.weather-container {
+  padding: 10px 15px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-icon {
+  height: 150px;
+  width: 150px;
+}
+
+.weather-container {
+  width: 100%;
+}
+
+.weather-container .head {
+  font-family: "Lexend Giga", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-container .head .temp {
+  font-size: x-large;
+}
+
+.weather-container .head .city {
+  font-size: xx-large;
+}
+
+.weather-container .head .country {
+  font-size: medium;
+}
+
+.weather-container .coordinates {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Exo 2", sans-serif;
+  width: 100%;
+}
+
+.weather-container .latitue,
+.weather-container .longitude {
+  text-align: center;
+}
+
+.weather-container .status {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Exo 2", sans-serif;
+}
+
+.weather-container .status .humidity,
+.weather-container .status .wind-speed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.weather-container .status .status-icon {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.weather-container .status .status-text {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+hr {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.credit {
+  text-align: center;
+  font-family: sans-serif;
+  color: darkgray;
+  font-size: 15px;
+  margin-top: 15px;
+  font-style: italic;
+}
